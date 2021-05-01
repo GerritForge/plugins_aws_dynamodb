@@ -1,0 +1,205 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0ef872e3_015a3a49",
+        "filename": "BUILD",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-01T07:03:22Z",
+      "side": 1,
+      "message": "nit: AFAIR java8 offers reworked time/date API (https://www.oracle.com/technical-resources/articles/java/jf14-date-time.html) is there a use case for joda-time?",
+      "range": {
+        "startLine": 32,
+        "startChar": 8,
+        "endLine": 32,
+        "endChar": 26
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "adf68dcc_9f949271",
+        "filename": "external_plugin_deps.bzl",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-01T07:03:22Z",
+      "side": 1,
+      "message": "nit: AFAIR java8 offers reworked time/date API (https://www.oracle.com/technical-resources/articles/java/jf14-date-time.html) is there a use case for joda-time?",
+      "range": {
+        "startLine": 68,
+        "startChar": 3,
+        "endLine": 72,
+        "endChar": 5
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e4009b6_ee9821a3",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/AmazonDynamoDBProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-01T07:03:22Z",
+      "side": 1,
+      "message": "nit: package protected?",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 7
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ce86f36b_42d1c72b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/Configuration.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-01T07:03:22Z",
+      "side": 1,
+      "message": "nit: all methods including constructor can be package protected",
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e8110385_24bf9323",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBLifeCycleManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-01T07:03:22Z",
+      "side": 1,
+      "message": "Is there any possibility to wait for ddb tables to be ready? (some loop that checks it every n-seconds time, etc...). If so one could wait for it on start. What is more it could be a part of the container init phase although I realise that it will be only a problem when tables are created for the first time ;)",
+      "range": {
+        "startLine": 50,
+        "startChar": 2,
+        "endLine": 52,
+        "endChar": 65
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0c7fe733_9e0e4f5d",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBLockClientProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-01T07:03:22Z",
+      "side": 1,
+      "message": "nit: can be package protected",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 7
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "51fad494_2ea2ae12",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBRefDatabase.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-01T07:03:22Z",
+      "side": 1,
+      "message": "nit: can be package protected",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 7
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e63a16d_a07a9885",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBRefDatabase.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-01T07:03:22Z",
+      "side": 1,
+      "message": "if there is any chance that refValue is \u0027null\u0027 then Optional.of would result in NPE, consider using Optional.ofNullable to be safe ;)",
+      "range": {
+        "startLine": 221,
+        "startChar": 6,
+        "endLine": 226,
+        "endChar": 39
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8daa5f2a_4a3342f7",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/Module.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-01T07:03:22Z",
+      "side": 1,
+      "message": "nit: this could be probably also package protected",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 8
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
