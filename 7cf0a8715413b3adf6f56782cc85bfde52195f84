@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "42c2bf31_1acc8589",
+        "filename": "BUILD",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-05-02T19:44:26Z",
+      "side": 1,
+      "message": "joda-time is not used directly. It is a transitive dependency needed by the AWS libraries we use, so we just provide it at runtime.\n\nP.S.  Good article, though, thanks!",
+      "parentUuid": "0ef872e3_015a3a49",
+      "range": {
+        "startLine": 32,
+        "startChar": 8,
+        "endLine": 32,
+        "endChar": 26
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "adf68dcc_9f949271",
         "filename": "external_plugin_deps.bzl",
         "patchSetId": 1
@@ -37,6 +61,30 @@
       "writtenOn": "2021-05-01T07:03:22Z",
       "side": 1,
       "message": "nit: AFAIR java8 offers reworked time/date API (https://www.oracle.com/technical-resources/articles/java/jf14-date-time.html) is there a use case for joda-time?",
+      "range": {
+        "startLine": 68,
+        "startChar": 3,
+        "endLine": 72,
+        "endChar": 5
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f8260d7d_b1a6c352",
+        "filename": "external_plugin_deps.bzl",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-05-02T19:44:26Z",
+      "side": 1,
+      "message": "See my previous reply",
+      "parentUuid": "adf68dcc_9f949271",
       "range": {
         "startLine": 68,
         "startChar": 3,
@@ -72,6 +120,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "04a2cf56_793b64c3",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/AmazonDynamoDBProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-05-02T19:44:26Z",
+      "side": 1,
+      "message": "Yep good point it\u0027s all in one package at the moment, I\u0027ll double check all access modifiers.",
+      "parentUuid": "2e4009b6_ee9821a3",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 7
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ce86f36b_42d1c72b",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/Configuration.java",
         "patchSetId": 1
@@ -89,6 +161,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "81a78b89_7e3f78c9",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/Configuration.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-05-02T19:44:26Z",
+      "side": 1,
+      "message": "Sure thing",
+      "parentUuid": "ce86f36b_42d1c72b",
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e8110385_24bf9323",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBLifeCycleManager.java",
         "patchSetId": 1
@@ -100,6 +190,30 @@
       "writtenOn": "2021-05-01T07:03:22Z",
       "side": 1,
       "message": "Is there any possibility to wait for ddb tables to be ready? (some loop that checks it every n-seconds time, etc...). If so one could wait for it on start. What is more it could be a part of the container init phase although I realise that it will be only a problem when tables are created for the first time ;)",
+      "range": {
+        "startLine": 50,
+        "startChar": 2,
+        "endLine": 52,
+        "endChar": 65
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a4bfc18f_b0410a36",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBLifeCycleManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-05-02T19:44:26Z",
+      "side": 1,
+      "message": "\u003e Is there any possibility to wait for ddb tables to be ready? \n\nThis is already done, unless I misunderstand your question.\n\n[1]https://review.gerrithub.io/plugins/gitiles/GerritForge/plugins_aws-dynamodb/+/refs/changes/42/515642/1/src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBLifeCycleManager.java#77\n\n[2]https://review.gerrithub.io/plugins/gitiles/GerritForge/plugins_aws-dynamodb/+/refs/changes/42/515642/1/src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBLifeCycleManager.java#105",
+      "parentUuid": "e8110385_24bf9323",
       "range": {
         "startLine": 50,
         "startChar": 2,
@@ -169,6 +283,30 @@
       "writtenOn": "2021-05-01T07:03:22Z",
       "side": 1,
       "message": "if there is any chance that refValue is \u0027null\u0027 then Optional.of would result in NPE, consider using Optional.ofNullable to be safe ;)",
+      "range": {
+        "startLine": 221,
+        "startChar": 6,
+        "endLine": 226,
+        "endChar": 39
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8d51e8d0_41beee7c",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBRefDatabase.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-05-02T19:44:26Z",
+      "side": 1,
+      "message": "\u003e if there is any chance that refValue is \u0027null\u0027 then Optional.of would result in NPE, consider using Optional.ofNullable to be safe ;)\n\nGood point! two things on this subject:\n\n- I don\u0027t think there is any chance tbh: we should never insert null values into DDB (see compareAndPut). However we should use .ofNullable + logging to be sure.\n- I wonder if we should catch null values of refValue in the exists() check and consider null values as not-existing.\n\nLet me think about this",
+      "parentUuid": "9e63a16d_a07a9885",
       "range": {
         "startLine": 221,
         "startChar": 6,
