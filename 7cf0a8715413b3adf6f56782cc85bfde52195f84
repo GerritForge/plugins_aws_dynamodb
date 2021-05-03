@@ -48,6 +48,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2b8124c_4b8dc146",
+        "filename": "BUILD",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-03T08:23:55Z",
+      "side": 1,
+      "message": "Ouch, that sucks :/ I can see that is also a reason for jackson* dependencies...",
+      "parentUuid": "42c2bf31_1acc8589",
+      "range": {
+        "startLine": 32,
+        "startChar": 8,
+        "endLine": 32,
+        "endChar": 26
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "adf68dcc_9f949271",
@@ -214,6 +238,30 @@
       "side": 1,
       "message": "\u003e Is there any possibility to wait for ddb tables to be ready? \n\nThis is already done, unless I misunderstand your question.\n\n[1]https://review.gerrithub.io/plugins/gitiles/GerritForge/plugins_aws-dynamodb/+/refs/changes/42/515642/1/src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBLifeCycleManager.java#77\n\n[2]https://review.gerrithub.io/plugins/gitiles/GerritForge/plugins_aws-dynamodb/+/refs/changes/42/515642/1/src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBLifeCycleManager.java#105",
       "parentUuid": "e8110385_24bf9323",
+      "range": {
+        "startLine": 50,
+        "startChar": 2,
+        "endLine": 52,
+        "endChar": 65
+      },
+      "revId": "7cf0a8715413b3adf6f56782cc85bfde52195f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fabb575e_ccf8f80c",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBLifeCycleManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-03T08:23:55Z",
+      "side": 1,
+      "message": "Right, TODO led me to thinking that this is not happening... Is this meant for the sidecar container that would be actually responsible for doing it upfront?",
+      "parentUuid": "a4bfc18f_b0410a36",
       "range": {
         "startLine": 50,
         "startChar": 2,
