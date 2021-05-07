@@ -1,6 +1,69 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e4f74cdf_6b7e959a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-05-07T12:35:31Z",
+      "side": 1,
+      "message": "LGTM overall. +2 assuming we will address some comments in follow up if needed.\n\nI am going to give it a spin.",
+      "revId": "294eb29ae355b3d83f8a1e3ab761c71dacb4edc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b33e50e6_3a0a7614",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/Configuration.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-05-07T12:35:31Z",
+      "side": 1,
+      "message": "might be good \"namespacing\" those tables with Gerrit and multi-site in case they get deployed with tables for other applications...something like gerrit/refdb/\u003ctable-name\u003e ?",
+      "range": {
+        "startLine": 31,
+        "startChar": 1,
+        "endLine": 32,
+        "endChar": 71
+      },
+      "revId": "294eb29ae355b3d83f8a1e3ab761c71dacb4edc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "20ccc6bb_2d13375b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBRefDatabase.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-05-07T12:35:31Z",
+      "side": 1,
+      "message": "extracting the string in a variable might make ti more readable, like:\n\n    String newOrUpdatedValue \u003d String.format(\n                    \"attribute_not_exists(%s) OR %s \u003d :old_value\",\n                    REF_DB_PRIMARY_KEY, REF_DB_VALUE_KEY)",
+      "range": {
+        "startLine": 125,
+        "startChar": 16,
+        "endLine": 127,
+        "endChar": 57
+      },
+      "revId": "294eb29ae355b3d83f8a1e3ab761c71dacb4edc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8ce2f0d4_e252f509",
@@ -19,6 +82,29 @@
         "startChar": 6,
         "endLine": 209,
         "endChar": 60
+      },
+      "revId": "294eb29ae355b3d83f8a1e3ab761c71dacb4edc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "639cd63e_21695c2d",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-05-07T12:35:31Z",
+      "side": 1,
+      "message": "duplicate of L28",
+      "range": {
+        "startLine": 32,
+        "startChar": 29,
+        "endLine": 32,
+        "endChar": 43
       },
       "revId": "294eb29ae355b3d83f8a1e3ab761c71dacb4edc1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
