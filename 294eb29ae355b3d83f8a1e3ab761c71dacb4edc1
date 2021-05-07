@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ce2f0d4_e252f509",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBRefDatabase.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2021-05-07T08:28:40Z",
+      "side": 1,
+      "message": "yeah it will result in ClassCastException if someone requests different type... thinking out loud if sth like that would make any sense (null results in \u0027false\u0027)\n\n    if (clazz.isInstance(refValue)) {\n       return Optional.of((T)refValue);\n    }\n\n    log.error(\"write sth meaningful...\");\n\nbut I\u0027m not sure if failing fast wouldn\u0027t be better in that case (unless it gets swallowed",
+      "range": {
+        "startLine": 207,
+        "startChar": 6,
+        "endLine": 209,
+        "endChar": 60
+      },
+      "revId": "294eb29ae355b3d83f8a1e3ab761c71dacb4edc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
