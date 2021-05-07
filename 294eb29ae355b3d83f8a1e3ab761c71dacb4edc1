@@ -18,6 +18,23 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "287d736f_0a7e8a58",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2021-05-07T13:54:39Z",
+      "side": 1,
+      "message": "I gave it a run locally and it seem to work for me. I have created repositories, branches and changes from WIP to merge.",
+      "revId": "294eb29ae355b3d83f8a1e3ab761c71dacb4edc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b33e50e6_3a0a7614",
