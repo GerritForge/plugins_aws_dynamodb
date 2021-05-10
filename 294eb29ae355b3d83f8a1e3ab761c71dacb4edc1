@@ -35,6 +35,23 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0359109d_26a7f609",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-05-10T07:37:43Z",
+      "side": 1,
+      "message": "Thanks all for reviewing!\nAs a PoC this is now mergeable.\nThere are some nits and comments that can be addressed as follow up changes, if the interest is enough to justify the survival of this prototype.\n\nFor now, merging 😊",
+      "revId": "294eb29ae355b3d83f8a1e3ab761c71dacb4edc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b33e50e6_3a0a7614",
@@ -94,6 +111,30 @@
       "writtenOn": "2021-05-07T08:28:40Z",
       "side": 1,
       "message": "yeah it will result in ClassCastException if someone requests different type... thinking out loud if sth like that would make any sense (null results in \u0027false\u0027)\n\n    if (clazz.isInstance(refValue)) {\n       return Optional.of((T)refValue);\n    }\n\n    log.error(\"write sth meaningful...\");\n\nbut I\u0027m not sure if failing fast wouldn\u0027t be better in that case (unless it gets swallowed",
+      "range": {
+        "startLine": 207,
+        "startChar": 6,
+        "endLine": 209,
+        "endChar": 60
+      },
+      "revId": "294eb29ae355b3d83f8a1e3ab761c71dacb4edc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "db1ed969_2efa8343",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/validation/dfsrefdb/dynamodb/DynamoDBRefDatabase.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2021-05-10T07:37:43Z",
+      "side": 1,
+      "message": "Yes, we could do that.\nBut I think a broader problem is that we do not use serialization of arbitrary objects at all .\nIf you look at the commit message that is indeed one of the outstanding TODO points.\nI\u0027ll create some follow up tickets for that and capture this point in there too.",
+      "parentUuid": "8ce2f0d4_e252f509",
       "range": {
         "startLine": 207,
         "startChar": 6,
